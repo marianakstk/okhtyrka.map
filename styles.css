@@ -368,3 +368,9 @@ body {
 .leaflet-control-attribution a {
   color: color-mix(in oklab, var(--accent) 70%, var(--text) 30%) !important;
 }
+
+/* Custom override: Home pin color */
+.pin--home {
+  background: #e74c3c;
+  border: 2px solid #e74c3c;
+}
