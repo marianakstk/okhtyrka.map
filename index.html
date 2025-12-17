@@ -1,16 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Okhtyrka Map — Memory Pins</title>
-  <meta name="description" content="An interactive map of Okhtyrka with pinned photo stories.">
+  <meta name="description" content="An interactive map of Okhtyrka with pinned photo stories." />
 
   <!-- Leaflet (CDN) -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -34,7 +38,9 @@
           placeholder="Search locations…"
           aria-label="Search pins by title"
         />
-        <button id="clearSearchBtn" class="search__clear" type="button" aria-label="Clear search" hidden>✕</button>
+        <button id="clearSearchBtn" class="search__clear" type="button" aria-label="Clear search" hidden>
+          ✕
+        </button>
       </div>
 
       <button
@@ -44,103 +50,7 @@
         aria-label="Toggle dark mode"
         aria-pressed="false"
       >
-        <span class="btn__icon" aria-hidden="true">🌃</span>
-        <span class="btn__text">Theme</span>
-      </button>
-    </div>
-  </header>
-
-  <main class="layout">
-    <div
-      id="map"
-      class="map"
-      tabindex="0"
-      role="application"
-      aria-label="Interactive map of Okhtyrka with pinned locations"
-    ></div>
-
-    <!-- Overlay for mobile sheet / focus trap vibe -->
-    <div id="overlay" class="overlay" hidden></div>
-
-    <aside
-      id="panel"
-      class="panel"
-      aria-hidden="true"
-      aria-labelledby="panelTitle"
-    >
-      <div class="panel__header">
-        <div class="panel__titles">
-          <h2 id="panelTitle" class="panel__title">Select a pin</h2>
-          <p id="panelMeta" class="panel__meta"></p>
-        </div>
-
-        <div class="panel__actions">
-          <button id="copyLinkBtn" class="btn btn--primary" type="button" disabled>
-            Copy link
-          </button>
-          <button id="closePanelBtn" class="btn btn--ghost" type="button" aria-label="Close details panel">
-            Esc
-          </button>
-        </div>
-      </div>
-
-      <section class="panel__body" aria-label="Pin details">
-        <div class="gallery" aria-label="Image gallery">
-          <button id="prevImgBtn" class="gallery__nav" type="button" aria-label="Previous image" disabled>‹</button>
-
-          <div id="galleryViewport" class="gallery__viewport">
-            <img
-              id="galleryImg"
-              class="gallery__img"
-              alt=""
-              loading="lazy"
-   <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Okhtyrka Map — Memory Pins</title>
-  <meta name="description" content="An interactive map of Okhtyrka with pinned photo stories.">
-
-  <!-- Leaflet (CDN) -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <a class="skip-link" href="#map">Skip to map</a>
-
-  <header class="topbar">
-    <div class="topbar__left">
-      <h1 class="brand" title="Okhtyrka (Sumy Oblast, Ukraine)">Okhtyrka Map</h1>
-      <p class="subtitle">Pins with photos + your stories</p>
-    </div>
-
-    <div class="topbar__right">
-      <div class="search">
-        <label class="sr-only" for="searchInput">Search pins</label>
-        <input
-          id="searchInput"
-          class="search__input"
-          type="search"
-          inputmode="search"
-          autocomplete="off"
-          placeholder="Search locations…"
-          aria-label="Search pins by title"
-        />
-        <button id="clearSearchBtn" class="search__clear" type="button" aria-label="Clear search" hidden>✕</button>
-      </div>
-
-      <button
-        id="themeToggle"
-        class="btn btn--ghost"
-        type="button"
-        aria-label="Toggle dark mode"
-        aria-pressed="false"
-      >
-        <span class="btn__icon" aria-hidden="true">🌃</span>
+        <span class="btn__icon" aria-hidden="true">🌙</span>
         <span class="btn__text">Theme</span>
       </button>
     </div>
@@ -191,35 +101,6 @@
               alt=""
               loading="lazy"
               decoding="async"
-            />
-            <div id="galleryCounter" class="gallery__counter" aria-live="polite"></div>
-          </div>
-
-          <button id="nextImgBtn" class="gallery__nav" type="button" aria-label="Next image" disabled>›</button>
-        </div>
-
-        <div class="caption">
-          <h3 class="caption__title">Story</h3>
-          <p id="captionText" class="caption__text">Click a marker to read its caption.</p>
-        </div>
-
-        <div class="hint" id="panelHint">
-          Tip: Tab to markers, press Enter to open. Press Esc to close.
-        </div>
-      </section>
-    </aside>
-  </main>
-
-  <!-- Leaflet (CDN) -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""
-  ></script>
-
-  <script defer src="script.js"></script>
-</body>
-</html>           decoding="async"
             />
             <div id="galleryCounter" class="gallery__counter" aria-live="polite"></div>
           </div>
