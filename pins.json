@@ -2,11 +2,10 @@
   {
     "id": "home",
     "title": "My Home",
-    "address": "Batiuka St, 24, Okhtyrka",
-    "coords": [50.3123, 34.9001],
-    "date": "2022-02-24",
+    "address": "Vulytsya Batyuka, 24, Okhtyrka",
+    "coords": [50.304337, 34.896859],
     "images": ["assets/sample/home-1.svg", "assets/sample/home-2.svg"],
-    "caption": "I will write this text.",
+    "caption": "Apartment 47, 5th floor. Most nights my family and I heard explosions, that would make my whole apartment building shake. The situation did not get better at all ever since I left. In fact, it got significantly worse.",
     "type": "home"
   },
   {
