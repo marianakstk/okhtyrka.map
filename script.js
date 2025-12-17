@@ -147,6 +147,11 @@
     els.panelMeta.textContent = metaParts.join(' • ');
     els.captionText.textContent = pin?.caption ? String(pin.caption) : '';
     galleryImages = Array.isArray(pin?.images) ? pin.images.slice() : [];
+        // Update duplicate elements for panel title, meta, and caption
+    document.querySelectorAll('#panelTitle').forEach(el => { el.textContent = title; });
+    document.querySelectorAll('#panelMeta').forEach(el => { el.textContent = metaParts.join(' \u2022 '); });
+    document.querySelectorAll('#captionText').forEach(el => { el.textContent = pin?.caption ? String(pin.caption) : ''; });
+
     galleryIndex = 0;
     const hasMany = galleryImages.length > 1;
     els.prevImgBtn.disabled = !hasMany;
