@@ -1,0 +1,102 @@
+[
+  {
+    "id": "home",
+    "title": "My Home",
+    "address": "Batiuka St, 24, Okhtyrka",
+    "coords": [50.3123, 34.9001],
+    "date": "2022-02-24",
+    "images": ["assets/sample/home-1.svg", "assets/sample/home-2.svg"],
+    "caption": "I will write this text.",
+    "type": "home"
+  },
+  {
+    "id": "site-01",
+    "title": "Location Name 01",
+    "coords": [50.3181, 34.8922],
+    "date": "2022-03-01",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-02",
+    "title": "Location Name 02",
+    "coords": [50.3058, 34.9104],
+    "date": "2022-03-05",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-03",
+    "title": "Location Name 03",
+    "coords": [50.3264, 34.9059],
+    "date": "2022-03-10",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-04",
+    "title": "Location Name 04",
+    "coords": [50.2996, 34.8957],
+    "date": "2022-03-14",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-05",
+    "title": "Location Name 05",
+    "coords": [50.3149, 34.8798],
+    "date": "2022-03-20",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-06",
+    "title": "Location Name 06",
+    "coords": [50.3212, 34.9173],
+    "date": "2022-03-26",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-07",
+    "title": "Location Name 07",
+    "coords": [50.3097, 34.8851],
+    "date": "2022-04-02",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-08",
+    "title": "Location Name 08",
+    "coords": [50.3331, 34.8936],
+    "date": "2022-04-08",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-09",
+    "title": "Location Name 09",
+    "coords": [50.2984, 34.9077],
+    "date": "2022-04-14",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  },
+  {
+    "id": "site-10",
+    "title": "Location Name 10",
+    "coords": [50.3206, 34.8829],
+    "date": "2022-04-20",
+    "images": ["assets/sample/site.svg"],
+    "caption": "I will write this text.",
+    "type": "documentary"
+  }
+]
