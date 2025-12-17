@@ -2,10 +2,11 @@
   {
     "id": "home",
     "title": "My Home",
-    "address": "Vulytsya Batyuka, 24, Okhtyrka",
+    "address": "Vulytsya Batyuka, 24, Okhtyrka, Sums'ka Oblast, Ukraine, 42701",
     "coords": [50.304337, 34.896859],
+    "date": "2022-02-24",
     "images": ["assets/sample/home-1.svg", "assets/sample/home-2.svg"],
-    "caption": "Apartment 47, 5th floor. Most nights my family and I heard explosions, that would make my whole apartment building shake. The situation did not get better at all ever since I left. In fact, it got significantly worse.",
+    "caption": "Apartment 47, 5th floor. Most nights my family and I heard explosions, that would make my whole apartment building shake. The situation did not get any easier when the Russians started shelling the city more intensively. My partner eventually left as I would have to care for my ill mother and there was no end in sight of the attack.",
     "type": "home"
   },
   {
